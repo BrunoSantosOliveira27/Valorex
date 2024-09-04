@@ -1,0 +1,33 @@
+CREATE DATABASE VALORANT;
+USE VALORANT;
+
+CREATE TABLE categoria (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE genero (
+	Id	   INT UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    Nome   VARCHAR(30) NOT NULL UNIQUE
+);
+
+CREATE TABLE personagem (
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(100) NOT NULL,
+    descricao TEXT,
+    ano_nascimento YEAR,
+    origem VARCHAR(100),
+	categoria_id INT,
+    genero_id INT UNSIGNED NOT NULL,
+    FOREIGN KEY (categoria_id) REFERENCES categoria(id),
+    FOREIGN KEY (genero_id) REFERENCES genero(id)
+);
+
+CREATE TABLE habilidade (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    personagem_id INT,
+    nome VARCHAR(100) NOT NULL,
+    descricao TEXT,
+    FOREIGN KEY (personagem_id) REFERENCES personagem(id)
+);
+

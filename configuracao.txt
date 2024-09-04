@@ -1,0 +1,10 @@
+git config --global user.name alanpinheiro96
+git config --global user.email alantnt15@gmail.com
+git config --global user.name BrunoSantosOliveira27
+git config --global user.email bruunoosanntos@outlook.com
+
+dotnet new mvc -o Valorex
+
+Instalar pacote do Entityframeworkcore e  SQL Server
+
+Shift + Alt + F = Auto alinhar o código

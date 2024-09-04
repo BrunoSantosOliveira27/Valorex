@@ -1,0 +1,14 @@
+INSERT INTO categoria (nome) VALUES 
+('Duelista'),('Iniciador'),('Controlador'),('Sentinela');   
+INSERT INTO genero (nome) VALUES
+('Masculino'),('Feminino');
+
+INSERT INTO personagem (nome, descricao, ano_nascimento, origem, categoria_id, genero_id) VALUES
+('Brimstone', 'Vindo diretamente dos EUA, o arsenal orbital do Brimstone garante que o esquadrão dele sempre esteja em vantagem. 
+Sua capacidade de oferecer utilitários com precisão e segurança faz dele um comandante inigualável na linha de frente.', 1972, 'Estados Unidos', 3, 1),
+('Sova','Nascido sob o eterno inverno das tundras russas, Sova rastreia, encontra e elimina inimigos com eficiência e precisão implacáveis.
+Seu arco personalizado e suas habilidades inigualáveis de reconhecimento garantem que nenhuma presa escape.', 1983, 'Russia', 2, 1),
+('KAY/O','KAY/O é uma máquina de guerra construída com um único propósito: neutralizar Radiantes. Ele é capaz de Suprimir habilidades inimigas, anulando a capacidade de
+contra-ataque dos adversários e dando a si e a seus aliados uma vantagem essencial em combate.', 3000, 'Futuro', 2, 1),
+('Cypher','Cypher, um vendedor de informações do Marrocos, é uma verdadeira rede de vigilância de um homem só que fica de olho em cada movimento dos inimigos. Nenhum segredo está a salvo. 
+Nenhuma manobra passa despercebida. Cypher está sempre vigiando.', 3000, 'Marrocos', 4, 1),
