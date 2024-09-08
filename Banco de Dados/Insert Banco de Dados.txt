@@ -6,6 +6,8 @@ INSERT INTO genero (nome) VALUES
 INSERT INTO personagem (nome, descricao, ano_nascimento, origem, categoria_id, genero_id) VALUES
 ('Breach', 'Breach, o homem-biônico sueco, dispara poderosos jatos cinéticos para forçar a abertura de um caminho pelo território inimigo. 
 O dano e a interrupção que ele causa garantem que nenhuma luta seja justa.', 1980, 'Suécia', 2, 1),
+('Phoenix', 'Chegando com tudo diretamente do Reino Unido, o poder estelar de Phoenix reluz em seu estilo de luta, incendiando o campo de batalha com luz e estilo. 
+Tendo ajuda ou não, ele entra na luta como e quando achar que deve.', 2002, 'Reino Unido', 1, 1),
 ('Brimstone', 'Vindo diretamente dos EUA, o arsenal orbital do Brimstone garante que o esquadrão dele sempre esteja em vantagem. 
 Sua capacidade de oferecer utilitários com precisão e segurança faz dele um comandante inigualável na linha de frente.', 1972, 'Estados Unidos', 3, 1),
 ('Sova','Nascido sob o eterno inverno das tundras russas, Sova rastreia, encontra e elimina inimigos com eficiência e precisão implacáveis.
@@ -14,60 +16,168 @@ Seu arco personalizado e suas habilidades inigualáveis de reconhecimento garant
 contra-ataque dos adversários e dando a si e a seus aliados uma vantagem essencial em combate.', 3000, 'Futuro', 2, 1),
 ('Cypher','Cypher, um vendedor de informações do Marrocos, é uma verdadeira rede de vigilância de um homem só que fica de olho em cada movimento dos inimigos. Nenhum segredo está a salvo. 
 Nenhuma manobra passa despercebida. Cypher está sempre vigiando.', 1975, 'Marrocos', 4, 1),
-('Phoenix', 'Chegando com tudo diretamente do Reino Unido, o poder estelar de Phoenix reluz em seu estilo de luta, incendiando o campo de batalha com luz e estilo. 
-Tendo ajuda ou não, ele entra na luta como e quando achar que deve.', 2002, 'Reino Unido', 1, 1),
 ('Omen', 'Omen, uma lembrança fantasmagórica, caça nas sombras. Ele cega os inimigos, teleporta-se pelo campo e deixa a paranoia assumir o 
 controle enquanto o adversário tenta descobrir de onde virá seu próximo ataque.', 1980, 'Desconhecido', 3, 1),
 ('Yoru', 'Yoru, nativo do Japão, abre fendas na realidade para infiltrar as linhas inimigas sem ser visto. Ele usa tanto artimanhas quanto táticas agressivas, 
 e os alvos são abatidos sem saber de onde o ataque veio.', 1997, 'Japão', 1, 1),
 ('Chamber', 'Bem-vestido e armado até os dentes, o criador de armas francês Chamber coloca os inimigos para correr com precisão mortal. Use e abuse do arsenal personalizado dele
- para segurar posições e abater inimigos de longe, criando a defesa perfeita para qualquer plano.', 'França', 1985, 4, 1),
- ('Harbor', 'Vindo do litoral indiano, Harbor entra em campo com a força da tormenta, empunhando tecnologia ancestral com domínio sobre a água. Ele libera corredeiras espumantes e ondas esmagadoras 
- para proteger seus aliados ou atacar aqueles que se opõem a ele.', 1984, 'Índia', 3, 1),
- ('Gekko', 'Gekko, de Los Angeles, lidera um grupo muito unido de criaturas caóticas. Seus amigos atropelam tudo, tirando os inimigos do caminho. Depois, 
- Gekko corre atrás deles para reagrupá-los e reiniciar o processo.', 2006, 'Estados Unidos', 2, 1),
- ('Iso', 'Iso é um mercenário chinês que entra em estado de fluxo para desmantelar os oponentes. Ele reconfigura a energia do ambiente para se proteger de balas e avança 
- totalmente focado em direção ao próximo duelo até a morte.', 2004, 'Japão', 1, 1),
- ('Sage', 'Como uma verdadeira fortaleza chinesa, Sage traz segurança para si mesma e para a equipe aonde quer que vá. Capaz de reviver aliados e rechaçar investidas agressivas, 
- ela oferece um centro de calmaria em meio ao caos da batalha.', 1981, 'China', 4, 2),
- ('Viper', 'Viper, a química dos Estados Unidos, emprega uma variedade de dispositivos químicos venenosos para controlar o campo de batalha 
- e prejudicar a visão do inimigo. Se as toxinas não matarem a presa, seus jogos mentais certamente o farão.', 1983, 'Estados Unidos', 3, 2),
- ('Reyna', 'Criada no coração do México, Reyna domina o combate individual, destacando-se a cada abate efetuado. Sua capacidade só é limitada por sua própria perícia, 
- tornando-a bastante dependente de desempenho.', 1980, 'Méximo', 1, 2),
- ('Killjoy', 'Killjoy, uma alemã genial, defende posições-chave no campo de batalha facilmente com seu arsenal de invenções. Se o dano causado por seu equipamento não der cabo dos inimigos, 
- os efeitos negativos de seus queridos robôs darão conta do recado.', 2000, 'Alemanha', 4, 2),
- ('Jett', 'Representando a Coreia do Sul, sua terra natal, Jett tem um estilo de luta ágil e evasivo
- que permite que ela assuma riscos como ninguém. Ela corre em meio a qualquer confronto, cortando os 
- inimigos antes mesmo que eles percebam quem ou o que os atingiu.', 2001, 'Coreia do Sul', 1, 2),
- ('Raze', 'Raze chega do Brasil com uma explosão de carisma e armas enormes. Com seu estilo de jogo "porradeiro", ela é craque em desentocar inimigos entrincheirados e limpar 
- espaços apertados com uma bela dose de BUUUM!', 2001, 'Brasil', 1, 2),
- ('Skye', 'Mandando um salve direto da Austrália, Skye e sua equipe de feras desbravam territórios hostis.
- Com seus poderes de cura e suas criações que partem pra cima dos inimigos, qualquer equipe ficará mais forte e 
- mais segura tendo Skye como aliada.', 1982, 'Austrália', 2, 2),
- ('Astra', 'Astra, a Agente ganense, utiliza energias cósmicas para moldar o campo de batalha a seu bel-prazer. Com total domínio da sua forma astral e um talento estratégico nato, 
- ela está sempre anos-luz à frente dos inimigos.', 1994, 'Gana', 3, 2),
- ('Neon', 'Neon, nossa Agente filipina, avança em velocidades incríveis, descarregando surtos de radiância bioelétrica tão rapidamente quanto seu corpo consegue gerá-los. Ela corre à frente para pegar os inimigos de surpresa, 
- abatendo-os mais rápido do que um raio.', 2005, 'Filipinas', 1, 2),
- ('Fade', 'Fade, uma caçadora de recompensas turca, usa o poder dos pesadelos para capturar os segredos dos inimigos. 
- Personificando o próprio terror, ela persegue os alvos e revela seus medos mais profundos para, depois,
- destruí-los na escuridão.', 1987, 'Turquia', 2, 2),
- ('Deadlock', 'A agente norueguesa Deadlock posiciona uma gama de nanofios de alta tecnologia para proteger o campo de batalha até mesmo do ataque mais letal. Ninguém escapa do seu olhar vigilante.
- Ninguém sobrevive à sua ferocidade implacável.', 1989, 'Noruega', 4, 2),
- ('Clove', 'Clove, ume encrenqueire da Escócia, vai desorientar os inimigos tanto no calor do combate quanto no frio da morte. Jovem e imortal, elu mantém os inimigos confusos até do além-túmulo: 
- momentos após a morte, elu retorna à vida.', 1999, 'Escócia', 3, 2),
- ('Vyse', 'A mestre dos metais Vyse usa metal líquido para isolar, prender e desarmar os inimigos. Com astúcia e manipulação,
- ela faz todos os adversários que a enfrentam temerem o próprio campo de batalha.', 2006, 'Escócia', 4, 2);
+para segurar posições e abater inimigos de longe, criando a defesa perfeita para qualquer plano.', 1985, 'França', 4, 1),
+('Harbor', 'Vindo do litoral indiano, Harbor entra em campo com a força da tormenta, empunhando tecnologia ancestral com domínio sobre a água. Ele libera corredeiras espumantes e ondas esmagadoras 
+para proteger seus aliados ou atacar aqueles que se opõem a ele.', 1984, 'Índia', 3, 1),
+('Gekko', 'Gekko, de Los Angeles, lidera um grupo muito unido de criaturas caóticas. Seus amigos atropelam tudo, tirando os inimigos do caminho. Depois, 
+Gekko corre atrás deles para reagrupá-los e reiniciar o processo.', 2006, 'Estados Unidos', 2, 1),
+('Iso', 'Iso é um mercenário chinês que entra em estado de fluxo para desmantelar os oponentes. Ele reconfigura a energia do ambiente para se proteger de balas e avança 
+totalmente focado em direção ao próximo duelo até a morte.', 2004, 'Japão', 1, 1),
+('Sage', 'Como uma verdadeira fortaleza chinesa, Sage traz segurança para si mesma e para a equipe aonde quer que vá. Capaz de reviver aliados e rechaçar investidas agressivas, 
+ela oferece um centro de calmaria em meio ao caos da batalha.', 1981, 'China', 4, 2),
+('Viper', 'Viper, a química dos Estados Unidos, emprega uma variedade de dispositivos químicos venenosos para controlar o campo de batalha 
+e prejudicar a visão do inimigo. Se as toxinas não matarem a presa, seus jogos mentais certamente o farão.', 1983, 'Estados Unidos', 3, 2),
+('Reyna', 'Criada no coração do México, Reyna domina o combate individual, destacando-se a cada abate efetuado. Sua capacidade só é limitada por sua própria perícia, 
+tornando-a bastante dependente de desempenho.', 1980, 'Méximo', 1, 2),
+('Killjoy', 'Killjoy, uma alemã genial, defende posições-chave no campo de batalha facilmente com seu arsenal de invenções. Se o dano causado por seu equipamento não der cabo dos inimigos, 
+os efeitos negativos de seus queridos robôs darão conta do recado.', 2000, 'Alemanha', 4, 2),
+('Jett', 'Representando a Coreia do Sul, sua terra natal, Jett tem um estilo de luta ágil e evasivo
+que permite que ela assuma riscos como ninguém. Ela corre em meio a qualquer confronto, cortando os 
+inimigos antes mesmo que eles percebam quem ou o que os atingiu.', 2001, 'Coreia do Sul', 1, 2),
+('Raze', 'Raze chega do Brasil com uma explosão de carisma e armas enormes. Com seu estilo de jogo "porradeiro", ela é craque em desentocar inimigos entrincheirados e limpar 
+espaços apertados com uma bela dose de BUUUM!', 2001, 'Brasil', 1, 2),
+('Skye', 'Mandando um salve direto da Austrália, Skye e sua equipe de feras desbravam territórios hostis.
+Com seus poderes de cura e suas criações que partem pra cima dos inimigos, qualquer equipe ficará mais forte e 
+mais segura tendo Skye como aliada.', 1982, 'Austrália', 2, 2),
+('Astra', 'Astra, a Agente ganense, utiliza energias cósmicas para moldar o campo de batalha a seu bel-prazer. Com total domínio da sua forma astral e um talento estratégico nato, 
+ela está sempre anos-luz à frente dos inimigos.', 1994, 'Gana', 3, 2),
+('Neon', 'Neon, nossa Agente filipina, avança em velocidades incríveis, descarregando surtos de radiância bioelétrica tão rapidamente quanto seu corpo consegue gerá-los. Ela corre à frente para pegar os inimigos de surpresa, 
+abatendo-os mais rápido do que um raio.', 2005, 'Filipinas', 1, 2),
+('Fade', 'Fade, uma caçadora de recompensas turca, usa o poder dos pesadelos para capturar os segredos dos inimigos. 
+Personificando o próprio terror, ela persegue os alvos e revela seus medos mais profundos para, depois,
+destruí-los na escuridão.', 1987, 'Turquia', 2, 2),
+('Deadlock', 'A agente norueguesa Deadlock posiciona uma gama de nanofios de alta tecnologia para proteger o campo de batalha até mesmo do ataque mais letal. Ninguém escapa do seu olhar vigilante.
+Ninguém sobrevive à sua ferocidade implacável.', 1989, 'Noruega', 4, 2),
+('Clove', 'Clove, ume encrenqueire da Escócia, vai desorientar os inimigos tanto no calor do combate quanto no frio da morte. Jovem e imortal, elu mantém os inimigos confusos até do além-túmulo: 
+momentos após a morte, elu retorna à vida.', 1999, 'Escócia', 3, 2),
+('Vyse', 'A mestre dos metais Vyse usa metal líquido para isolar, prender e desarmar os inimigos. Com astúcia e manipulação,
+ela faz todos os adversários que a enfrentam temerem o próprio campo de batalha.', 2006, 'Escócia', 4, 2);
 
-  INSERT INTO habilidade (personagem_id,nome,descricao,) VALUES 
-(1,'Estremecer','Dispara uma explosão sísmica que atravessa o terreno, atordoando inimigos.'),
-(1,'Ponto de Fulgor', 'Dispara um flash cegante que atravessa paredes.'),
+
+
+INSERT INTO habilidade (personagem_id,nome,descricao,) VALUES 
+
+(1,'Pós-choque','Dispara uma carga para armar um jato de ação lenta pela parede. O jato causa muito dano a todos que estiverem na área de efeito.'),
+(1,'Estopim', 'Dispara um flash cegante que atravessa paredes.'),
 (1,'Falha Tectônica','Cria uma fissura que atordoa todos os inimigos em sua área de efeito.'),
 (1,'Onda Trovejante','Dispara uma grande explosão sísmica que atordoa e lança os inimigos ao ar.'),
+
+(2,'Labareda','Cria uma parede de fogo que bloqueia a visão e causa dano a quem atravessá-la. Phoenix se cura ao passar pela parede.'),
 (2,'Bola Curva','Lança uma curva de luz cegante que pode ser direcionada à esquerda ou à direita.'),
 (2,'Mãos Quentes','Lança uma bola de fogo que explode e incendeia a área após um tempo ou ao impacto.'),
-(2,'Labareda','Cria uma parede de fogo que bloqueia a visão e causa dano a quem atravessá-la. Phoenix se cura ao passar pela parede.'),
 (2,'Renascimento','Quando Phoenix morre durante a duração da habilidade, ele renasce no local onde ativou a habilidade com a vida restaurada.'),
-(3,'Incendiário','Lança um lança-granadas que dispara uma carga incendiária, causando dano em área.'),
+
 (3,'Sinalizador Estimulante','Coloca um beacons no chão, concedendo aos aliados dentro de sua área de efeito uma taxa de disparo aumentada.'),
+(3,'Incendiário','Lança um lança-granadas que dispara uma carga incendiária, causando dano em área.'),
 (3,'Cortina de Fumaça','Dispara nuvens de fumaça que obscurecem a visão. As nuvens podem ser controladas remotamente.'),
 (3,'Ataque Orbital','Dispara um raio laser devastador de energia em uma área específica, causando grande dano ao longo do tempo.'),
+
+(4, 'Drone Coruja', 'Lança um drone controlável que pode atirar dardos rastreadores nos inimigos.'),
+(4, 'Flecha de Choque', 'Dispara uma flecha de choque que causa dano em uma pequena área ao impactar.'),
+(4, 'Flecha de Reconhecimento', 'Dispara uma flecha que emite pulsos de radar ao bater nas superfícies, revelando inimigos dentro da área de efeito.'),
+(4, 'Choque de Caçador', 'Sova dispara três flechas de energia que atravessam paredes e causam dano a quem estiver em seu caminho.'),
+
+(5, 'FRAG/mento', 'Lança uma granada que se fragmenta, causando dano massivo em área.'),
+(5, 'FLASH/drive', 'Lança uma granada flash que explode após um tempo, cegando inimigos.'),
+(5, 'ZERO/point', 'Lança uma faca que desativa as habilidades de todos os inimigos na área atingida.),
+(5, 'NULL/cmd', 'Entra em modo sobrecarregado, causando efeitos de supressão aos inimigos próximos e permitindo que KAY/O seja revivido por aliados se for derrubado.'),
+
+(6, 'Fio-Armadilha', 'Coloca uma armadilha invisível que conecta dois pontos. Inimigos que passam por ela ficam presos e revelados.'),
+(6, 'Jaula Cibernética', 'Lança uma jaula que obscurece a visão e desacelera os inimigos que passam por ela.'),
+(6, 'Câmera de Vigilância', 'Coloca uma câmera que pode ser controlada para monitorar uma área e marcar inimigos com dardos.'),
+(6, 'Neural Net', 'Revela as posições de todos os inimigos vivos ao usar essa habilidade em um inimigo morto.'),
+
+(7, 'Passo Tenebroso', 'Teletransporta-se para uma localização próxima.'),
+(7, 'Paranoia', 'Omen dispara uma sombra que atravessa paredes e cega todos os inimigos atingidos.'),
+(7, 'Manto Sombrio', 'Lança uma esfera que cria uma área de fumaça, bloqueando a visão dos inimigos.'),
+(7, 'Salto das Sombras', 'Teletransporta-se para qualquer ponto do mapa, mas pode ser interrompido se for pego por inimigos.'),
+
+(8, 'Falcatrua', 'um eco dimensional que se transforma em uma cópia do Yoru quando ativado.'),
+(8, 'Ponto cego', 'Yoru lança uma bomba de fumaça que confunde e bloqueia a visão dos inimigos.'),
+(8, 'Passagem Dimensional', 'Teleporta-se rapidamente para uma área curta, enganando os inimigos com uma sombra falsa.'),
+(8, 'Deriva Dimensional', 'Yoru entra em um estado invisível e invulnerável, podendo atravessar as linhas inimigas sem ser detectado.'),
+
+(9, 'Marca Registrada', 'Chamber coloca uma armadilha que escaneia para detectar inimigos e aplica um efeito de lentidão.'),
+(9, 'Cartucho de Bala', 'Chamber dispara um tiro preciso com sua pistola especial, matando instantaneamente.'),
+(9, 'Teleporte', 'Posiciona dois marcadores que podem ser usados para se teletransportar rapidamente entre eles.'),
+(9, 'Tour de Force', 'Chamber invoca um rifle de precisão poderoso que abate inimigos com um único tiro.'),
+
+(10, 'Maré Alta', 'Harbor cria uma parede de água que bloqueia a visão dos inimigos e retarda seu movimento.'),
+(10, 'Cascata', 'Lança uma onda de água que atravessa o mapa e retarda os inimigos que tocar.'),
+(10, 'Enxurrada', 'Dispara um geiser que sobe do chão, interrompendo e atordoando os inimigos.'),
+(10, 'Tempestade Retumbante', 'Cria uma tempestade em área, causando dano em inimigos que estão nela.'),
+
+(11, 'Moshpit', 'Lança uma criatura explosiva que se divide em múltiplas explosões ao impactar o chão.'),
+(11, 'Wingman', 'Lança uma criatura que corre e atordoa os inimigos, podendo também plantar ou desarmar a Spike.'),
+(11, 'Dizzy', 'Gekko lança uma criatura que percorre o mapa e cega os inimigos que encontra.'),
+(11, 'Thrash', 'Gekko controla uma criatura que pode se lançar em direção aos inimigos, causando atordoamento.'),
+
+(12, 'Fluxo', 'Iso usa sua habilidade de reconfigurar energia para criar uma barreira que absorve projéteis.'),
+(12, 'Caça Focada', 'Iso pode localizar inimigos próximos e ver suas posições temporariamente.'),
+(12, 'Ataque Direcionado', 'Avança em linha reta até um alvo, causando dano concentrado a quem encontrar.'),
+(12, 'Duelo Final', 'Iso se concentra em um único inimigo, transportando-os para uma arena separada para um duelo até a morte.'),
+
+(13, 'Orbe de Barreira', 'Sage cria uma parede sólida que pode ser usada para bloquear passagens e elevar aliados.'),
+(13, 'Orbe de Cura', 'Sage cura a si mesma ou um aliado, regenerando pontos de vida ao longo do tempo.'),
+(13, 'Orbe de Lentidão', 'Lança um orbe que cria uma área que retarda o movimento de quem passar por ela.'),
+(13, 'Ressurreição', 'Revive um aliado caído com vida total.'),
+
+(14, 'Nuvem Venenosa', 'Viper lança uma cápsula de gás que cria uma nuvem venenosa ao ser ativada.'),
+(14, 'Poço Peçonhento', 'Cria uma grande área de gás venenoso que causa dano contínuo aos inimigos.'),
+(14, 'Cortina Tóxica', 'Lança uma linha de dispositivos que liberam uma parede de gás venenoso ao serem ativados.'),
+(14, 'Mordida de Cobra', 'Lança um projétil que explode ao impacto, deixando uma poça de ácido que causa dano.'),
+
+(15, 'Olhar Voraz', 'Reyna lança um olho etéreo que desorienta os inimigos que olharem para ele.'),
+(15, 'Devorar', 'Reyna absorve as almas de inimigos abatidos para curar a si mesma.'),
+(15, 'Dispensar', 'Reyna se torna intangível por um breve período após absorver a alma de um inimigo.'),
+(15, 'Imperatriz', 'Reyna entra em um estado de frenesí, aumentando sua velocidade de disparo e recarga.'),
+
+(16, 'Nanoswarm', 'Killjoy lança uma granada que se desativa no chão, ativando uma área de dano ao ser reativada.'),
+(16, 'Robô de Alarme', 'Lança um robô que persegue inimigos e explode ao chegar perto, aplicando um efeito de vulnerabilidade.'),
+(16, 'Torreta', 'Coloca uma torreta que atira automaticamente em inimigos dentro de seu alcance.'),
+(16, 'Bloqueio', 'Cria um dispositivo que, ao ser ativado, detona em área, imobilizando todos os inimigos atingidos.'),
+
+(17, 'Tempestade de Aço', 'Jett conjura várias lâminas que podem ser lançadas rapidamente ou todas de uma vez.'),
+(17, 'Rajada de Vento', 'Avança rapidamente em uma direção, esquivando-se dos ataques inimigos.'),
+(17, 'Furacão', 'Jett cria uma corrente de vento que a lança para o alto, permitindo reposicionamento rápido.'),
+(17, 'Brisa Cortante', 'Lança uma rajada de vento afiada que causa dano aos inimigos no caminho.'),
+
+(18, 'Boom Bot', 'Raze lança um robô que persegue inimigos e explode ao se aproximar.'),
+(18, 'Pacote Explosivo', 'Raze lança uma carga de explosivos que pode ser detonada remotamente, causando dano em área.'),
+(18, 'Cartuchos de Tinta', 'Lança duas granadas que explodem em várias mini-granadas.'),
+(18, 'Estraga-prazeres', 'Raze invoca um lançador de foguetes que causa grande dano em área.'),
+
+(19, 'Explorador', 'Skye lança um animal explorador que revela a localização dos inimigos e os atordoa.'),
+(19, 'Luz Desbravadora', 'Skye lança um falcão de luz que pode ser controlado para cegar inimigos.'),
+(19, 'Revitalizar', 'Cura aliados dentro da área de efeito ao longo do tempo.'),
+(19, 'Feras da Caçada', 'Skye invoca feras que perseguem inimigos e os atordoam ao contato.'),
+
+(20, 'Poço Gravitacional', 'Astra cria uma singularidade que puxa todos os inimigos para o centro e os deixa vulneráveis.'),
+(20, 'Pulso Nova', 'Carrega uma explosão que atordoa todos os inimigos em uma área.'),
+(20, 'Névoa Estelar', 'Coloca estrelas no campo que podem ser transformadas em fumaça, poços gravitacionais ou pulsos de nova.'),
+(20, 'Forma Astral/Cósmico Divisor', 'Astra entra em sua forma astral, posicionando estrelas no campo, e pode criar uma barreira impenetrável que bloqueia projéteis e som.'),
+
+(21, 'Rajada Relâmpago', 'Neon dispara uma rajada de eletricidade em linha reta, causando dano aos inimigos no caminho.'),
+(21, 'Fuga Relâmpago', 'Neon corre rapidamente pelo campo, podendo atravessar os inimigos e terrenos perigosos.'),
+(21, 'Barreira Elétrica', 'Cria uma barreira de eletricidade que bloqueia a visão e causa dano ao ser atravessada.'),
+(21, 'Tempestade Neural', 'Dispara um raio contínuo de eletricidade de alta intensidade, causando dano massivo aos inimigos.'),
+
+(22, 'Agarre Sombrio', 'Fade dispara um orbe de sombra que revela os inimigos na área atingida.'),
+(22, 'Capturar', 'Lança uma armadilha que prende os inimigos em uma área, impedindo sua fuga.'),
+(22, 'Medo Noturno', 'Fade invoca criaturas sombrias que perseguem inimigos e revelam suas posições.'),
+(22, 'Pânico Coletivo', 'Lança uma onda de energia que expõe as fraquezas e medos dos inimigos atingidos, deixando-os vulneráveis.'),
+
+(23, 'Armadilha de Nanofios', 'Deadlock posiciona fios de alta tecnologia que se ativam e prendem inimigos que tentam passar.'),
+(23, 'Pulso Sônico', 'Lança um pulso sônico que desorienta inimigos em uma área.'),
+(23, 'Domo Defensor', 'Cria uma barreira impenetrável que bloqueia ataques inimigos por um período.'),
+(23, 'Encapsulamento', 'Envolve um inimigo em uma cápsula que o isola e o torna vulnerável a ataques subsequentes.'),
+
+(24, 'Cascata Metálica', 'Vyse cria uma onda de metal líquido que flui pelo campo, capturando e imobilizando inimigos.'),
+(24, 'Rede de Ferro', 'Lança uma rede de metal líquido que prende inimigos ao solo, dificultando seu movimento.'),
+(24, 'Esfera Blindada', 'Cria uma barreira metálica ao redor de si mesma ou de um aliado, protegendo de ataques.'),
+(24, 'Sarcófago Metálico', 'Envolve um inimigo em metal líquido, desarmando-o temporariamente e deixando-o vulnerável a ataques.'); 
