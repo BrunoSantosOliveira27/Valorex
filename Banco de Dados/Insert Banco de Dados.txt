@@ -60,7 +60,7 @@ ela faz todos os adversários que a enfrentam temerem o próprio campo de batalh
 
 
 
-INSERT INTO habilidade (personagem_id,nome,descricao,) VALUES 
+INSERT INTO habilidade (personagem_id,nome,descricao) VALUES 
 
 (1,'Pós-choque','Dispara uma carga para armar um jato de ação lenta pela parede. O jato causa muito dano a todos que estiverem na área de efeito.'),
 (1,'Estopim', 'Dispara um flash cegante que atravessa paredes.'),
@@ -84,7 +84,7 @@ INSERT INTO habilidade (personagem_id,nome,descricao,) VALUES
 
 (5, 'FRAG/mento', 'Lança uma granada que se fragmenta, causando dano massivo em área.'),
 (5, 'FLASH/drive', 'Lança uma granada flash que explode após um tempo, cegando inimigos.'),
-(5, 'ZERO/point', 'Lança uma faca que desativa as habilidades de todos os inimigos na área atingida.),
+(5, 'ZERO/point', 'Lança uma faca que desativa as habilidades de todos os inimigos na área atingida.'),
 (5, 'NULL/cmd', 'Entra em modo sobrecarregado, causando efeitos de supressão aos inimigos próximos e permitindo que KAY/O seja revivido por aliados se for derrubado.'),
 
 (6, 'Fio-Armadilha', 'Coloca uma armadilha invisível que conecta dois pontos. Inimigos que passam por ela ficam presos e revelados.'),
@@ -171,17 +171,24 @@ Ative para se teleportar até ele ou clique para acionar um teleporte falso.'),
 (21, 'Equipamento Voltaico', 'Neon corre rapidamente pelo campo, podendo atravessar os inimigos e terrenos perigosos.'),
 (21, 'Sobrecarga', 'Dispara um raio contínuo de eletricidade de alta intensidade, causando dano massivo aos inimigos.'),
 
-(22, 'Agarre Sombrio', 'Fade dispara um orbe de sombra que revela os inimigos na área atingida.'),
-(22, 'Capturar', 'Lança uma armadilha que prende os inimigos em uma área, impedindo sua fuga.'),
-(22, 'Medo Noturno', 'Fade invoca criaturas sombrias que perseguem inimigos e revelam suas posições.'),
-(22, 'Pânico Coletivo', 'Lança uma onda de energia que expõe as fraquezas e medos dos inimigos atingidos, deixando-os vulneráveis.'),
+(22, 'Espreitador', 'Fade invoca criaturas sombrias que perseguem inimigos e revelam suas posições.'),
+(22, 'Clausura', 'Lança uma armadilha que prende os inimigos em uma área, impedindo sua fuga.'),
+(22, 'Assombrar', 'Fade dispara um orbe de sombra que revela os inimigos na área atingida.'),
+(22, 'Véu da Noite', 'Lança uma onda de energia que expõe as fraquezas e medos dos inimigos atingidos, deixando-os vulneráveis.'),
 
-(23, 'Armadilha de Nanofios', 'Deadlock posiciona fios de alta tecnologia que se ativam e prendem inimigos que tentam passar.'),
-(23, 'Pulso Sônico', 'Lança um pulso sônico que desorienta inimigos em uma área.'),
-(23, 'Domo Defensor', 'Cria uma barreira impenetrável que bloqueia ataques inimigos por um período.'),
-(23, 'Encapsulamento', 'Envolve um inimigo em uma cápsula que o isola e o torna vulnerável a ataques subsequentes.'),
+(23, 'Gravnet', 'A GravNet detona ao atingir o chão, forçando inimigos pegos por ela a agacharem e moverem-se lentamente'),
+(23, 'Sensor Sônico', ' Causa concussão na área se sons de passos, disparos ou qualquer barulho significativo forem detectados.'),
+(23, 'Barreira de Contenção', 'Cria uma barreira impenetrável que bloqueia ataques inimigos por um período.'),
+(23, 'Aniquilação', ' O inimigo encasulado é puxado por uma trilha de nanofios e abatido se chegar ao final da trilha, a não ser que
+seja libertado. O casulo de nanofios é destrutível.'),
 
-(24, 'Cascata Metálica', 'Vyse cria uma onda de metal líquido que flui pelo campo, capturando e imobilizando inimigos.'),
-(24, 'Rede de Ferro', 'Lança uma rede de metal líquido que prende inimigos ao solo, dificultando seu movimento.'),
-(24, 'Esfera Blindada', 'Cria uma barreira metálica ao redor de si mesma ou de um aliado, protegendo de ataques.'),
-(24, 'Sarcófago Metálico', 'Envolve um inimigo em metal líquido, desarmando-o temporariamente e deixando-o vulnerável a ataques.'); 
+(24, 'Revitalizar', 'Absorve a energia vital de um inimigo caído que sofreu dano ou foi abatido por Clove e receba aceleração e Vida temporárias.'),
+(24, 'Desvitalização', 'Ele detona após um breve intervalo e aplica temporariamente Deterioração a todos os alvos atingidos.'),
+(24, 'Artimanha', 'Lança nuvens que bloqueiam a visão nas áreas selecionadas.
+Clove pode usar essa habilidade depois de morrer.'),
+(24, 'Ainda Não Morri', 'Clove precisa obter um abate ou uma assistência de dano em um determinado período ou morre de vez.'),
+
+(25, 'Espinheiro Cortante', 'Ele se espalha e cria um grande espinheiro que causa Lentidão e dano a todos os jogadores que passam por ele.'),
+(25, 'Cerca Viva', 'Quando um inimigo passa por ela, uma parede indestrutível emerge do chão atrás dele. A parede dura um breve período antes de se dissipar.'),
+(25, 'Rosa Arcana', 'Cega todos os jogadores que estiverem olhando para ela quando ativada. A habilidade pode ser recuperada e reposicionada.'),
+(25, 'Jardim de Aço', 'Lança uma metal de espinhos metálicos, bloqueando as armas primárias inimigas após um breve período.'); 
