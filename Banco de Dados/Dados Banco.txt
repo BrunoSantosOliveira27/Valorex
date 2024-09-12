@@ -1,33 +1,33 @@
-CREATE DATABASE VALORANT;
-USE VALORANT;
+CREATE DATABASE VALOREX;
+USE VALOREX;
 
-CREATE TABLE categoria (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    nome VARCHAR(30) NOT NULL
+CREATE TABLE Categoria (
+    Id INT PRIMARY KEY AUTO_INCREMENT,
+    Nome VARCHAR(30) NOT NULL
 );
 
-CREATE TABLE genero (
+CREATE TABLE Genero (
 	Id	   INT UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
     Nome   VARCHAR(30) NOT NULL UNIQUE
 );
 
-CREATE TABLE personagem (
-    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    nome VARCHAR(30) NOT NULL,
-    descricao TEXT,
-    ano_nascimento YEAR,
-    origem VARCHAR(30),
-	categoria_id INT,
-    genero_id INT UNSIGNED NOT NULL,
-    FOREIGN KEY (categoria_id) REFERENCES categoria(id),
-    FOREIGN KEY (genero_id) REFERENCES genero(id)
+CREATE TABLE Personagem (
+    Id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    Nome VARCHAR(30) NOT NULL,
+    Descricao TEXT,
+    Ano_nascimento YEAR,
+    Origem VARCHAR(30),
+	Categoria_id INT,
+    Genero_id INT UNSIGNED NOT NULL,
+    FOREIGN KEY (Categoria_id) REFERENCES Categoria(id),
+    FOREIGN KEY (Genero_id) REFERENCES Genero(id)
 );
 
-CREATE TABLE habilidade (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    personagem_id INT,
-    nome VARCHAR(30) NOT NULL,
-    descricao TEXT,
-    FOREIGN KEY (personagem_id) REFERENCES personagem(id)
+CREATE TABLE Habilidade (
+    Id INT PRIMARY KEY AUTO_INCREMENT,
+    Personagem_id INT,
+    Nome VARCHAR(30) NOT NULL,
+    Descricao TEXT,
+    FOREIGN KEY (Personagem_id) REFERENCES Personagem(id)
 );
 
