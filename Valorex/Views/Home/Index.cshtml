@@ -17,14 +17,16 @@
 
                 @foreach (var categoria in Model.Categorias)
                 {
-                    <button id="@categoria.Nome" class="btn btn-sm my-2 text-white btn-filter" style="background-color: white">
+                    <button id="@categoria.Nome" class="btn btn-sm my-2 text-white btn-filter"
+                        style="background-color: @categoria.Cor">
                         @categoria.Nome
                     </button>
                 }
 
                 @foreach (var genero in Model.Generos)
                 {
-                    <button id="@genero.Nome" class="btn btn-sm my-2 text-white btn-filter" style="background-color: @genero.Cor">
+                    <button id="@genero.Nome" class="btn btn-sm my-2 text-white btn-filter"
+                        style="background-color: @genero.Cor">
                         @genero.Nome
                     </button>
                 }
@@ -36,9 +38,11 @@
         @foreach (var personagem in Model.Personagems)
         {
             <!-- Card Personagem - Início -->
-            <div class="col @string.Join(' ', Model.Categorias.Where(c => c.Id == personagem.Categoria_id).Select(c => c.Nome))">
+            <div
+                class="col @string.Join(' ', Model.Categorias.Where(c => c.Id == personagem.Categoria_id).Select(c => c.Nome))">
                 <a asp-action="Details" asp-route-id="@personagem.Id" class="text-decoration-none">
-                    <div class="card" style="background-color: @BackgroundColor(Model.Categorias.FirstOrDefault(c => c.Id == personagem.Categoria_id)?.Cor ?? "#FFFFFF")">
+                    <div class="card"
+                        style="background-color: @BackgroundColor(Model.Categorias.FirstOrDefault(c => c.Id == personagem.Categoria_id)?.Cor ?? "#FFFFFF")">
                         <img src="@personagem.Imagem" class="card-img-top" alt="@personagem.Nome" />
                         <div class="card-body">
                             <h5 class="card-text mb-1 text-white">Ano de Nascimento: @personagem.Ano_Nascimento</h5>
@@ -48,7 +52,7 @@
                                 <div class="d-flex gap-2 my-2">
                                     @foreach (var habilidade in personagem.Habilidades)
                                     {
-                                        <a href="#" class="btn text-white" style="background-color: @habilidade.Cor">@habilidade.Nome</a>
+                                        <a href="#" class="btn text-white" style="background-color:"></a>
                                     }
                                 </div>
                             </div>

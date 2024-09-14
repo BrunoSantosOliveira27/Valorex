@@ -3,7 +3,8 @@ USE VALOREX;
 
 CREATE TABLE Categoria (
     Id INT PRIMARY KEY AUTO_INCREMENT,
-    Nome VARCHAR(30) NOT NULL
+    Nome VARCHAR(30) NOT NULL,
+    Cor   VARCHAR(25)
 );
 
 CREATE TABLE Genero (
@@ -17,6 +18,7 @@ CREATE TABLE Personagem (
     Descricao TEXT,
     Ano_nascimento YEAR,
     Origem VARCHAR(30),
+    Imagem VARCHAR(200),
 	Categoria_id INT,
     Genero_id INT UNSIGNED NOT NULL,
     FOREIGN KEY (Categoria_id) REFERENCES Categoria(id),

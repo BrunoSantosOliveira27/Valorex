@@ -1,3 +1,41 @@
+CREATE DATABASE VALOREX;
+GO 
+
+USE VALOREX;
+GO 
+
+CREATE TABLE Categoria (
+    Id INT PRIMARY KEY AUTO_INCREMENT,
+    Nome VARCHAR(30) NOT NULL,
+    Cor   VARCHAR(25)
+);
+
+CREATE TABLE Genero (
+	Id	   INT UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    Nome   VARCHAR(30) NOT NULL UNIQUE
+);
+
+CREATE TABLE Personagem (
+    Id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    Nome VARCHAR(30) NOT NULL,
+    Descricao TEXT,
+    Ano_nascimento YEAR,
+    Origem VARCHAR(30),
+    Imagem VARCHAR(200),
+	Categoria_id INT,
+    Genero_id INT UNSIGNED NOT NULL,
+    FOREIGN KEY (Categoria_id) REFERENCES Categoria(id),
+    FOREIGN KEY (Genero_id) REFERENCES Genero(id)
+);
+
+CREATE TABLE Habilidade (
+    Id INT PRIMARY KEY AUTO_INCREMENT,
+    Personagem_id INT,
+    Nome VARCHAR(30) NOT NULL,
+    Descricao TEXT,
+    FOREIGN KEY (Personagem_id) REFERENCES Personagem(id)
+);
+
 INSERT INTO categoria (nome, cor) VALUES 
 ('Duelista', 'rgba(255, 68, 34, 1)'),
 ('Iniciador','rgba(51, 153, 255, 1)'),

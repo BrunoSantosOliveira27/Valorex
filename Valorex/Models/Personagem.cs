@@ -20,6 +20,8 @@ public class Personagem
 
     [StringLength(30)]
     public string Origem { get; set; }
+    
+    public string Imagem { get; set; }
 
 
     public int Categoria_id { get; set; }
