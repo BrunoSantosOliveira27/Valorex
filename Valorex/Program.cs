@@ -4,7 +4,7 @@ using Valorex.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-string conexao = builder.Configuration.GetConnectionString("Conexao");
+string conexao = builder.Configuration.GetConnectionString("ValorexConexao");
 var versao = ServerVersion.AutoDetect(conexao);
 builder.Services.AddDbContext<AppDbContext>(
     options => options.UseMySql(conexao, versao)

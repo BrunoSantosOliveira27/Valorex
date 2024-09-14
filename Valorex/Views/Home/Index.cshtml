@@ -1,8 +1,66 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model Valorex.ViewModels.HomeVM
+@{
+    ViewData["Title"] = "Home";
+
+    string BackgroundColor(string color)
+    {
+        return color.Replace("1)", "0.75)");
+    }
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="pt-5 container">
+    <div class="row">
+        <div class="col mx-auto text-center">
+            <h1 class="display-4 text-white">Valorex</h1>
+            <div class="my-3">
+                <button id="btn-all" class="btn btn-md my-2 text-white bg-secondary btn-filter">Ver Todos</button>
+
+                @foreach (var categoria in Model.Categorias)
+                {
+                    <button id="@categoria.Nome" class="btn btn-sm my-2 text-white btn-filter" style="background-color: white">
+                        @categoria.Nome
+                    </button>
+                }
+
+                @foreach (var genero in Model.Generos)
+                {
+                    <button id="@genero.Nome" class="btn btn-sm my-2 text-white btn-filter" style="background-color: @genero.Cor">
+                        @genero.Nome
+                    </button>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+        @foreach (var personagem in Model.Personagems)
+        {
+            <!-- Card Personagem - Início -->
+            <div class="col @string.Join(' ', Model.Categorias.Where(c => c.Id == personagem.Categoria_id).Select(c => c.Nome))">
+                <a asp-action="Details" asp-route-id="@personagem.Id" class="text-decoration-none">
+                    <div class="card" style="background-color: @BackgroundColor(Model.Categorias.FirstOrDefault(c => c.Id == personagem.Categoria_id)?.Cor ?? "#FFFFFF")">
+                        <img src="@personagem.Imagem" class="card-img-top" alt="@personagem.Nome" />
+                        <div class="card-body">
+                            <h5 class="card-text mb-1 text-white">Ano de Nascimento: @personagem.Ano_Nascimento</h5>
+                            <h3 class="card-title text-dark">@personagem.Nome</h3>
+                            <p class="card-text text-dark">@personagem.Descricao</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex gap-2 my-2">
+                                    @foreach (var habilidade in personagem.Habilidades)
+                                    {
+                                        <a href="#" class="btn text-white" style="background-color: @habilidade.Cor">@habilidade.Nome</a>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Card Personagem - Fim -->
+        }
+
+        <div id="zeroPersonagem" class="col-lg-12 text-center" hidden>
+            <h1 class="my-3 text-danger">Nenhum Personagem Encontrado</h1>
+        </div>
+    </div>
 </div>

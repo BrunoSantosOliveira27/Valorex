@@ -15,6 +15,8 @@ public class Categoria
     [Required]
     [StringLength(30)]
     public string Nome { get; set; }
+
+    public string Cor { get; set; }
 }
 
 

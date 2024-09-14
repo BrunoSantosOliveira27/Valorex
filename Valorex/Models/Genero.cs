@@ -17,4 +17,5 @@ public class Genero
     [StringLength(30)]
     public string Nome { get; set; }
 
+    public string Cor { get; set; }
 }

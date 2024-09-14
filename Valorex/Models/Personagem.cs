@@ -31,6 +31,6 @@ public class Personagem
     [ForeignKey("Genero_id")]
     public Genero Genero { get; set; }
 
-
+    public ICollection<Habilidade> Habilidades { get; set; }
 
 }
