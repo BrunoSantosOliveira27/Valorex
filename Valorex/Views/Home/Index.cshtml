@@ -22,14 +22,6 @@
                         @categoria.Nome
                     </button>
                 }
-
-                @foreach (var genero in Model.Generos)
-                {
-                    <button id="@genero.Nome" class="btn btn-sm my-2 text-white btn-filter"
-                        style="background-color: @genero.Cor">
-                        @genero.Nome
-                    </button>
-                }
             </div>
         </div>
     </div>
@@ -39,15 +31,15 @@
         {
             <!-- Card Personagem - Início -->
             <div
-                class="col @string.Join(' ', Model.Categorias.Where(c => c.Id == personagem.Categoria_id).Select(c => c.Nome))">
+                class="col">
                 <a asp-action="Details" asp-route-id="@personagem.Id" class="text-decoration-none">
                     <div class="card"
                         style="background-color: @BackgroundColor(Model.Categorias.FirstOrDefault(c => c.Id == personagem.Categoria_id)?.Cor ?? "#FFFFFF")">
                         <img src="@personagem.Imagem" class="card-img-top" alt="@personagem.Nome" />
                         <div class="card-body">
-                            <h5 class="card-text mb-1 text-white">Ano de Nascimento: @personagem.Ano_Nascimento</h5>
-                            <h3 class="card-title text-dark">@personagem.Nome</h3>
-                            <p class="card-text text-dark">@personagem.Descricao</p>
+                            <h5 class="card-text mb-1 text-white">@personagem.Nome</h5>
+                            <h3 class="card-title text-dark">@personagem.Categoria.Nome</h3>
+
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex gap-2 my-2">
                                     @foreach (var habilidade in personagem.Habilidades)

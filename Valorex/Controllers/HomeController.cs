@@ -26,7 +26,8 @@ public class HomeController : Controller
             Categorias = _context.Categorias.ToList(),
             Personagems = _context.Personagems
             .Include(p => p.Categoria)
-            .ThenInclude(p => p.Nome)
+            .Include(p => p.Genero)
+            .Include(p => p.Habilidades)
             .ToList()
         };
         return View(home);
@@ -37,9 +38,9 @@ public class HomeController : Controller
         Personagem personagem = _context.Personagems
             .Where(p => p.Id == id)
             .Include(p => p.Categoria)
-            .ThenInclude(c => c.Cor)
-            .Include(p => p.Origem)
+            .Include(p => p.Habilidades)
             .Include(p => p.Genero)
+
             .SingleOrDefault();  //pegar apenas um registro
         DetailsVM details = new()
         {
