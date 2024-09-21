@@ -37,7 +37,7 @@ ela oferece um centro de calmaria em meio ao caos da batalha.', 1981, 'China','\
 ('Viper', 'Viper, a química dos Estados Unidos, emprega uma variedade de dispositivos químicos venenosos para controlar o campo de batalha 
 e prejudicar a visão do inimigo. Se as toxinas não matarem a presa, seus jogos mentais certamente o farão.', 1983, 'Estados Unidos','\\img\\agentes\\014.png', 3, 2),
 ('Reyna', 'Criada no coração do México, Reyna domina o combate individual, destacando-se a cada abate efetuado. Sua capacidade só é limitada por sua própria perícia, 
-tornando-a bastante dependente de desempenho.', 1980, 'Méximo','\\img\\agentes\\015.png', 1, 2),
+tornando-a bastante dependente de desempenho.', 1980, 'México','\\img\\agentes\\015.png', 1, 2),
 ('Killjoy', 'Killjoy, uma alemã genial, defende posições-chave no campo de batalha facilmente com seu arsenal de invenções. Se o dano causado por seu equipamento não der cabo dos inimigos, 
 os efeitos negativos de seus queridos robôs darão conta do recado.', 2000, 'Alemanha','\\img\\agentes\\016.png', 4, 2),
 ('Jett', 'Representando a Coreia do Sul, sua terra natal, Jett tem um estilo de luta ágil e evasivo

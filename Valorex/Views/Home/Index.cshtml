@@ -13,12 +13,14 @@
         <div class="col mx-auto text-center">
             <h1 class="display-4 text-white">Valorex</h1>
             <div class="my-3">
-                <button id="btn-all" class="btn btn-md my-2 text-white bg-secondary btn-filter">Ver Todos</button>
+                <button id="btn-all" class="btn btn-md my-2 text-white bg-secondary btn-filter" onclick="filter('')">
+                    Ver Todos
+                </button>
 
                 @foreach (var categoria in Model.Categorias)
                 {
-                    <button id="@categoria.Nome" class="btn btn-sm my-2 text-white btn-filter"
-                        style="background-color: @categoria.Cor">
+                    <button id="@categoria.Nome" class="btn btn-sm my-2 text-white btn-filter "
+                        style="background-color: @categoria.Cor" onclick="filter('@categoria.Nome')">
                         @categoria.Nome
                     </button>
                 }
@@ -31,11 +33,11 @@
         {
             <!-- Card Personagem - Início -->
             <div
-                class="col">
+                class="col poke">
                 <a asp-action="Details" asp-route-id="@personagem.Id" class="text-decoration-none">
                     <div class="card"
                         style="background-color: @BackgroundColor(Model.Categorias.FirstOrDefault(c => c.Id == personagem.Categoria_id)?.Cor ?? "#FFFFFF")">
-                        <img src="@personagem.Imagem" class="card-img-top" alt="@personagem.Nome" />
+                        <img src="@personagem.Imagem" class="card-img-top height-600" alt="@personagem.Nome" />
                         <div class="card-body">
                             <h5 class="card-text mb-1 text-white">@personagem.Nome</h5>
                             <h3 class="card-title text-dark">@personagem.Categoria.Nome</h3>
@@ -55,8 +57,12 @@
             <!-- Card Personagem - Fim -->
         }
 
-        <div id="zeroPersonagem" class="col-lg-12 text-center" hidden>
+        <div id="zeroPersonagem" class="col-lg-12 text-center d-none" >
             <h1 class="my-3 text-danger">Nenhum Personagem Encontrado</h1>
         </div>
     </div>
 </div>
+
+@section Scripts{
+    <script src="~/js/site.js"></script>
+}
