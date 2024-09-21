@@ -11,7 +11,7 @@
 <div class="pt-5 container">
     <div class="row">
         <div class="col mx-auto text-center">
-            <h1 class="display-4 text-white">Valorex</h1>
+            <h1 class="display-4 text-white">Agentes Valorant</h1>
             <div class="my-3">
                 <button id="btn-all" class="btn btn-md my-2 text-white bg-secondary btn-filter" onclick="filter('')">
                     Ver Todos
@@ -33,14 +33,15 @@
         {
             <!-- Card Personagem - Início -->
             <div
-                class="col poke">
+                class="col poke @personagem.Categoria.Nome">
                 <a asp-action="Details" asp-route-id="@personagem.Id" class="text-decoration-none">
                     <div class="card"
                         style="background-color: @BackgroundColor(Model.Categorias.FirstOrDefault(c => c.Id == personagem.Categoria_id)?.Cor ?? "#FFFFFF")">
                         <img src="@personagem.Imagem" class="card-img-top height-600" alt="@personagem.Nome" />
                         <div class="card-body">
-                            <h5 class="card-text mb-1 text-white">@personagem.Nome</h5>
-                            <h3 class="card-title text-dark">@personagem.Categoria.Nome</h3>
+                            <h6 class="card-text mb-1 text-white">Nº @personagem.Id.ToString("000")</h6>
+                            <h2 class="card-text mb-1 text-white">@personagem.Nome</h2>
+                            <h5 class="card-title text-dark">@personagem.Categoria.Nome</h5>
 
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex gap-2 my-2">

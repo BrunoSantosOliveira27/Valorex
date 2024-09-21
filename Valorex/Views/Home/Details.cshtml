@@ -15,7 +15,7 @@
             }
         </div>
         <div class="col text-center">
-            <h1 class="fs-1">@Model.Atual.Nome <span class="fs-2 text-secondary">Nº
+            <h1 class="fs-1">@Model.Atual.Nome <span class="fs-2 text-secondary text-black">Nº
                     @Model.Atual.Id.ToString("000")</span></h1>
         </div>
         <div class="col text-center">
@@ -34,19 +34,17 @@
             <img class="img-fluid cursor-pointer" src="@Model.Atual.Imagem" alt="@Model.Atual.Nome">
         </div>
         <div class="col-lg-7 fs-5 mt-4">
-            
-            <p class="mb-3"><strong>Categoria:</strong> @Model.Atual.Categoria.Nome</p>
-            <p class="mb-3"><strong>Descrição:</strong> @Model.Atual.Descricao</p>
-           <p class="mb-3"><strong>Habilidades:</strong></p>
+            <p class="mb-3 text-center"><strong>Ficha de Informações</strong></p>
+            <p class="mb-3"><strong>Descrição:</strong><strong class="texto-destaque"> @Model.Atual.Descricao</strong></p>
+            <p class="mb-3"><strong>Categoria:</strong><strong class="texto-destaque"> @Model.Atual.Categoria.Nome</strong></p>
+            <p class="mb-3"><strong>Gênero:</strong><strong class="texto-destaque"> @Model.Atual.Genero.Nome</strong></p>
+            <p class="mb-3"><strong>Origem:</strong><strong class="texto-destaque"> @Model.Atual.Origem</strong></p>
+            <p class="mb-3"><strong>Ano de nascimento:</strong><strong class="texto-destaque"> @Model.Atual.Ano_Nascimento</strong></p>
+            <p class="mb-3 text-center"><strong>Habilidades do personagem:</strong></p>
             @foreach (var habilidade in Model.Atual.Habilidades)
-            {
-              <p class="mb-3"> @habilidade.Nome</p>
-              <p class="mb-3"> @habilidade.Descricao</p>
-              }
-            <p class="mb-3"><strong>Gênero:</strong> @Model.Atual.Genero.Nome</p>
-             <p class="mb-3"><strong>Origem:</strong> @Model.Atual.Origem</p>
-              <p class="mb-3"><strong>Ano de nascimento:</strong> @Model.Atual.Ano_Nascimento</p>
-    
+                {
+                    <p class="mb-3"><strong>@habilidade.Nome</strong> - <strong class="texto-destaque"> @habilidade.Descricao</strong></p>
+                }
           
 
 

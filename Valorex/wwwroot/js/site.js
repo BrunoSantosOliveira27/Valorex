@@ -3,10 +3,10 @@
     let cardCount = 0;
     document.querySelectorAll('.poke').forEach(card => {
         card.style.display = "flex";
-        cardCount +=1;
+        cardCount += 1;
         if(!card.classList.contains(categoria) && categoria !== ''){ 
             card.style.display = 'none';
-            cardCount -=1;
+            cardCount -= 1;
     }});
 
     // verificar se existem cards 

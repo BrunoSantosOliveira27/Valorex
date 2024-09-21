@@ -6,3 +6,8 @@
     transition: 0.6s;
     z-index: 1000;
 }
+
+.texto-destaque {
+    color: black; /* Deixa o texto em preto */
+    font-style: bold;
+}
