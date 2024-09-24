@@ -19,7 +19,7 @@
 
                 @foreach (var categoria in Model.Categorias)
                 {
-                    <button id="@categoria.Nome" class="btn btn-sm my-2 text-white btn-filter "
+                    <button id="btn-@categoria.Nome" class="btn btn-sm my-2 text-white btn-filter "
                         style="background-color: @categoria.Cor" onclick="filter('@categoria.Nome')">
                         @categoria.Nome
                     </button>

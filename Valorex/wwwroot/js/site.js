@@ -19,9 +19,9 @@
    document.querySelectorAll('.btn-filter').forEach(button =>{
     button.classList.add('btn-sm');
     button.classList.remove('btn-md');
-    if(button.id == `btn-${categoria}`){
-        button.classList.remove('btn-sm');
-    button.classList.add('btn-md');
+        if(button.id == `btn-${categoria}`){
+            button.classList.remove('btn-sm');
+            button.classList.add('btn-md');
     } 
    });
 
